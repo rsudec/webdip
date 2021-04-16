@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Mypassword"
+AuthUserFile ../htdocs/projekt/private/.htpasswd
+Require valid-user

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <title>O autoru </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="autor" content="Robert Sudec">
+  <meta name="kljucnaRijec" content="FOI, WebDiP, labos">
+  <meta name="naslov" content="O autoru">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <nav class="nav">
+    <ul class="nav-ul">
+      <li class="nav-ul-li"><a class="nav-ul-li-a" href="index.php">početna</a></li>   
+    </ul>
+  </nav>
+  <section class="dokumentacija">
+    <div class="dio">
+        <h3>Opis projektnog zadatka</h3>
+        <h5>Kratak opis projekta:</h5>
+        <p>Sustav omogućuje upravljanje ronilačkim centrima, rezervacijama termina za ronjenje i sl.</p>
+        <h5>Uloge</h5>
+        <ul>
+            <li>Neregistrirani korisnik</li>
+            <li>Registrirani korisnik / Ronioc</li>
+            <li>Moderator / Voditelj ronilačkog centra</li>
+            <li>Administrator</li>
+        </ul>
+        <h5>Detaljne upute</h5>
+        <p>Administrator</p>
+        <ul>
+            <li>Kreira ronilački centar i dodjeljuje moderatore za ronilački centar.</li>
+            <li>Kreira vrste ronilačkih lokacija (u centru, zidovi, olupine, …</li>
+            <li>Odobrava ili odbija lokacije koje je kreirao moderator.</li>
+            <li>Pregledava statistike zahtjeva za rezervacijom termina (odobrenih/odbijenih) u nekom
+                    razdoblju po ronilačkim centrima uz mogućnost da se odabere centar i onda se dobiju podaci
+                    po lokacijama tog centra.</li>
+        </ul>
+        <p>Moderator</p>
+        <ul>
+            <li>Kreira lokacije za ronjenje u ronilačkom centru pri čemu obavezno odabire vrstu ronilačkih
+                    lokacija te definira naziv, vrijeme prijevoza do lokacije, dubinu, broj mjesta po terminu i opis.
+                    Automatski se šalje zahtjev administratoru da odobri lokaciju.</li>
+            <li>Kreira termine ronjenja za neku lokaciju nakon što administrator odobri lokaciju. Termine
+                    ronjenja može postaviti u stanje završeno kada prođe termin. </li>
+
+            <li>Pregledava i odobrava zahtjeve korisnika za rezervacijom mjesta. Odobren/odbijen zahtjev za
+                    rezervacijom termina ima datum i vrijeme odobravanja/odbijanja. Posebno su označeni oni
+                    kod kojih je naznačena dubina u zahtjevu manja od dubine lokacije. Ne može odobriti više
+                    zahtjeva nego ima slobodnih mjesta po terminu.</li>
+            
+
+        </ul>
+        <p>Registrirani</p>
+        <ul>
+                <li>Kreira zahtjeve za rezervacijom termina za ronjenje. Ako nema mjesta odmah je status na
+                        čekanju. Kod kreiranja zahtjeva mora navesti do koje dubine u metrima smije roniti.
+                        </li>
+                <li>Pregledava zahtjeve sa statusom termina ronjenja (odobreni, odbijeni, završeni). Može
+                        odustati prije termina ronjenja, pri čemu se oslobađa mjesto za nekog drugog korisnika. </li>
+                <li>Postavlja sliku s lokacije na kojima je ronio, može birati samo lokacije gdje ima termin koji je
+                        završio</li>
+                
+        </ul>
+        <p>Neregistrirani</p>
+        <ul>
+                <li>Može pretraživati lokacije za ronjenje uz mogućnost filtriranja po ronilačkom centru i vrsti
+                        lokacije. Svaki element ima dvije poveznice na ronilački centar i lokaciju.</li>
+                <li>Vidi informacije o lokaciji sa slikama te lokacije.</li>
+                <li>Vidi informacije o ronilačkom centru. </li>
+        </ul>
+    
+    </div>
+    <div class="dio">
+        <h3>Opis projektnog rješenja</h3>
+        <p>Rješenje obuhvaća funkcionalan rad sustava.</p>
+        <p>Rješenje nije u potpunosti ispravno.</p>
+        <p>Nedostaje implementacija nekoliko funkcionalnosti</p>
+    </div>
+    <div class="dio">
+        <h3>Odrednice projektnog rješenja</h3>
+        <p>ERA Model</p>
+        <img src="assets/eraModel.svg"width=1000px>
+    </div>
+    <div class="dio">
+        <h3>Skripte</h3>
+        <p>Navigacijski dijagram</p>
+        <img src="assets//nav_dijagram.svg" width=1000px>
+        <p>Mapa mjesta</p>
+        <div id=mapa>
+                <div id="top">
+                        <nav>barka.foi.hr HTML Site Map</nav>
+                        <h3>
+                <span>Last updated: 2019, June 4<br />
+                Total pages: 10</span>
+                <a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt">barka.foi.hr Homepage</a>
+                </h3></div>
+                    <div id="cont">
+                        <ul class="level-0">
+                
+                            <li class="lhead">/  <span class="lcount">4 pages</span></li>
+                            
+                <li class="lpage"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/" title="Index ">Index </a></li>
+                <li class="lpage"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/index.php" title="Index ">Index </a></li>
+                <li class="lpage"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/o_autoru.html" title="O autoru ">O autoru </a></li>
+                <li class="lpage last-page"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/dokumentacija.html" title="O autoru ">O autoru </a></li><li><ul class="level-1">
+                
+                            <li class="lhead">form/  <span class="lcount">3 pages</span></li>
+                            
+                <li class="lpage"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/form/prijava.php" title="Prijava ">Prijava </a></li>
+                <li class="lpage"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/form/registracija.php" title="Registracija ">Registracija </a></li>
+                <li class="lpage last-page"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/form/zaborav.php" title="Zaboravljena lozinka ">Zaboravljena lozinka </a></li>
+                </ul><ul class="level-1">
+                
+                            <li class="lhead">pages/  <span class="lcount">3 pages</span></li>
+                            
+                <li class="lpage"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/pages/pretraga.php" title="Pretraga ">Pretraga </a></li>
+                <li class="lpage"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/pages/centar.php" title="Ronilački centar ">Ronilački centar </a></li>
+                <li class="lpage last-page"><a href="http://barka.foi.hr/WebDiP/2018/zadaca_01/rsudec/projekt/pages/lokacija.php" title="Ronilačka lokacija ">Ronilačka lokacija </a></li>
+                </ul></li>
+                </ul>
+                        <!--
+                Please note:
+                You are not allowed to remove the copyright notice below.
+                Thank you!
+                www.xml-sitemaps.com
+                -->
+                    </div>
+                    <div id="footer">
+                        Page created with <a target="_blank" href="https://www.xml-sitemaps.com">Google XML sitemap and html sitemaps generator</a> | Copyright &copy; 2005-2018 XML-Sitemaps.com
+                    </div>
+        </div>
+        <p> Popis skripata</p>
+        <ul>
+            <li>Admin 
+                <ul>
+                    <li>odbijLokaciju.php</li>
+                    <li>prihvatiLokaciju.php</li>
+                </ul>
+            </li>
+            <li>Panel 
+                    <ul>
+                        <li>banUnban.php</li>
+                        <li>dohvatiKorisnike.php</li>
+                        <li>dohvatiLogove.php</li>
+                        <li>saveCSV.php</li>
+                    </ul>
+                </li>
+            <li>Moderator 
+                <ul>
+                    <li>odbijZahtjevKorisnika.php</li>
+                    <li>prihvatiZahtjevKorisnika.php</li>
+                </ul>
+            </li>
+            <li>Delete 
+                <ul>
+                    <li>obrisiZahtjev.php</li>
+                </ul>
+            </li>
+            <li>Fetch 
+                <ul>
+                    <li>centarPaginate.php</li>
+                    <li>dohvatiCentar.php</li>
+                    <li>dohvatiGradove.php</li>
+                    <li>dohvatiLokacije.php</li>
+                    <li>dohvatiLokacijeZaCombo.php</li>
+                    <li>dohvatiTermine.php</li>
+                    <li>dohvatiUsername.php</li>
+                    <li>dohvatiVrste.php</li>
+                    <li>dohvatiZahtjeveKorisnika.php</li>
+                    <li>dohvatiZahtjeveZaAdmina.php</li>
+                    <li>dohvatiZahtjeveZaModeratora.php</li>
+                    <li>lokacijePaginate.php</li>
+                </ul>
+            </li>
+            <li>Form 
+                <ul>
+                    <li>adminP.php</li>
+                    <li>odjava.php</li>
+                    <li>prijava.php</li>
+                    <li>profil.php</li>
+                    <li>registracija.php</li>
+                    <li>zaborav.php</li>
+                </ul>
+            </li>
+            <li>Other 
+                <ul>
+                    <li>aktivacija.php</li>
+                    <li>dodjelaModa.php</li>
+                    <li>kreirajCentar.php</li>
+                    <li>kreirajLokaciju.php</li>
+                    <li>kreirajRezervaciju.php</li>
+                    <li>kreirajTermin.php</li>
+                    <li>KReirajVrstu.php</li>
+                    <li>postaviTerminNaZavrseno.php</li>
+                    <li>uploadSlike.php</li>
+                </ul>
+            </li>
+            <li>Pages 
+                <ul>
+                    <li>centar.php</li>
+                    <li>lokacija.php</li>
+                    <li>pretraga.php</li>
+                </ul>
+            </li>
+            <li>Private 
+                <ul>
+                    <li>users.php</li>
+                </ul>
+            </li>
+            <li>index.php</li>
+            <li>podnozje.php</li>
+            <li>zaglavlje.php</li>
+
+        </ul>
+    </div>
+    <div class="dio">
+        <h3>Tehnologije</h3>
+        <h5>Smarty</h5>
+        <h5>jQuery</h5>
+        <h5>Google API</h5>
+        <h5>jQuery CSV</h5>
+
+    </div>
+    <div class="dio">
+        <h3>Vanjske biblioteke</h3>
+        <h4>jQuery CSV</h4>
+        <p><a>https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js</a></p>
+        <p>Korišteno za lakši rad (čitanje) CSV datoteke</p>
+        <h4>Smarty</h4>
+        <p>U potpunosti iskorišten Smarty sustav za predloške</p>
+        <h4>Baza.class.php</h4>
+        <p>Korištena klasa Baza za lakši rad s bazom</p>
+        <h4 >Sesija.class.php</h4>
+        <p>Korištena klasa Sesija za lakši rad sa sesijom</p>
+    </div>
+  </section>
+  
